@@ -51,3 +51,8 @@
       login_user: root
       login_password: "{{ mysql_root_password }}"
       login_host: "{{ login_host }}"
+      target: /app/schema/backend.PyMySQL
+      name: all
+      state: dump
+
+  
