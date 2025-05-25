@@ -51,7 +51,7 @@
       name:
         - PyMySQL
       executable: pip3.9
-      
+
   - name: import mysql data
     ansible.builtin.mysql_db:
       login_user: root
@@ -59,6 +59,6 @@
       login_host: "{{ login_host }}"
       target: /app/schema/backend.PyMySQL
       name: all
-      state: dump
+      state: import 
 
   
